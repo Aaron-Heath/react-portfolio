@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Button, Navbar } from 'react-bootstrap';
 import Header from './Components/Header';
+import Name from './Components/Name'
 
 let App = () => {
   return (
@@ -11,7 +12,7 @@ let App = () => {
       <div class="row">
         <div class="col-md-8">
           <div class="col-md-6">
-          <p id="branded-name" class="mint">Aaron Heath<span class="accent">.</span></p>
+            <Name inline={false} />
           </div>
           <div class="col-md-6">
             

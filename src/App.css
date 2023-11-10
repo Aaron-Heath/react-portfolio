@@ -40,9 +40,14 @@ main {
   color: var(--mint);
 }
 
-#branded-name {
+.branded-name {
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.branded-name p {
+  margin:0;
 }
 
 .navbar-secondary-drk, .navbar {
