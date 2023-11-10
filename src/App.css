@@ -1,0 +1,62 @@
+:root {
+  --accent: #84dccf;
+  --dark: #000f08;
+  --bluemetal: #1c3738;
+  --grey: #4d4847;
+  --mint: #F4FFF8;
+  --blugrey: #8bAAAD;
+}
+
+/* DEBUG STYLINGS ONLY */
+nav,
+main {
+  border: 2px red solid;
+}
+
+.row {
+  border: 2px blue solid;
+}
+
+.row > .col-md-8,
+.row > .col-md-4 {
+  border: 2px green dashed;
+}
+
+/* END DEBUG STYLINGS */
+
+body {
+  background-color: var(--bluemetal) !important;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.mint {
+  color: var(--mint);
+}
+
+#branded-name {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.navbar-secondary-drk, .navbar {
+  background-color: var(--bluemetal);
+  color: var(--mint) !important;
+}
+
+.navbar .bg-dark {
+  background-color: var(--bluemetal) !important;
+  color: var(--mint) !important;
+}
+
+.nav-link,
+.navbar-brand {
+  color: var(--mint) !important;
+}
+
