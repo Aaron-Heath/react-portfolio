@@ -22,6 +22,10 @@ main {
   border: 2px green dashed;
 }
 
+.row .col-md-6 {
+  /* border: orange dashed 2px; */
+}
+
 /* END DEBUG STYLINGS */
 
 body {
@@ -29,7 +33,7 @@ body {
 }
 
 main {
-  margin-top: 100px;
+  margin: 100px;
 }
 
 .accent {
@@ -48,6 +52,12 @@ main {
 
 .branded-name p {
   margin:0;
+}
+
+.dash {
+  background-color: var(--accent);
+  margin: 40px 85% 10px 0;
+  height: 2px;
 }
 
 .navbar-secondary-drk, .navbar {
