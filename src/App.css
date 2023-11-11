@@ -8,7 +8,7 @@
 }
 
 /* DEBUG STYLINGS ONLY */
-nav,
+/* nav,
 main {
   border: 2px red solid;
 }
@@ -20,7 +20,7 @@ main {
 .row > .col-md-8,
 .row > .col-md-4 {
   border: 2px green dashed;
-}
+} */
 
 .row .col-md-6 {
   /* border: orange dashed 2px; */
@@ -68,6 +68,30 @@ main {
 
 #contact-btn:hover {
   background-color: var(--dark);
+}
+
+.feature-card {
+  color: var(--mint);
+}
+
+.feature-card h2 {
+  color:var(--accent);
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.feature-card a {
+  position: absolute;
+  color: var(--accent);
+
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#bio-pic {
+  max-width: 100%;
+  margin-top: 100px;
 }
 
 .accent {
