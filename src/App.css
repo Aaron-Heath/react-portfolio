@@ -36,6 +36,40 @@ main {
   margin: 100px;
 }
 
+/* Anchor Styling */
+#socials, #socials a {
+  text-decoration: none;
+  color: var(--mint);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#socials a {
+  transition: 0.5s;
+}
+
+#socials a:hover {
+  font-size: 22px;
+}
+
+/* Contact btn */
+#contact-btn {
+  margin: 50px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 0;
+
+  font-weight: bold;
+  color: var(--accent);
+  background-color: transparent;
+  border: 2px var(--accent) solid;
+
+  transition: .5s;
+}
+
+#contact-btn:hover {
+  background-color: var(--dark);
+}
+
 .accent {
   color: var(--accent);
 }
