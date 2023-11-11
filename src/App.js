@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './Components/Header';
 import BioFeature from './Components/BioFeature';
 
 
 let App = () => {
+  const [page, setPage] = useState("home");
 
 
   return (
