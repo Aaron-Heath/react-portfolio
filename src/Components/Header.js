@@ -11,10 +11,13 @@ export default function Header() {
           <Nav>
             <Nav.Link href="#deets">Home</Nav.Link>
             <Nav.Link href="#1">
+              About Me
+            </Nav.Link>
+            <Nav.Link href="#1">
               Projects
             </Nav.Link>
             <Nav.Link href="#2">
-              Contact Me
+              Contact
             </Nav.Link>
           </Nav>
         </Container>

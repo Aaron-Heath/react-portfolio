@@ -75,3 +75,7 @@ main {
   color: var(--mint) !important;
 }
 
+span.navbar-brand {
+  font-size: 25px;
+}
+
