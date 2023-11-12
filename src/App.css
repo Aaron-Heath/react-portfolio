@@ -13,6 +13,10 @@ main {
   border: 2px red solid;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .row {
   border: 2px blue solid;
 }
@@ -48,6 +52,7 @@ h2 {
 
 #contact-info {
   display:flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -55,7 +60,7 @@ h2 {
 .contact-card {
   display: flex;
   align-items: center;
-  margin: 20px;  
+  margin: 10px 20px;  
   height: 50px;
   width: 350px;
 
