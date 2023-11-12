@@ -32,6 +32,44 @@ main {
   margin: 100px;
 }
 
+/* Header Styling */
+h2 {
+  color: var(--accent) !important;
+  font-weight: bold !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+/* Contact Components */
+
+#contact-info {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  margin: 20px;  
+  height: 50px;
+  width: 350px;
+
+  background-color: rgba(0, 15, 8, .3);
+
+  color: var(--accent);
+  font-weight: bold;
+}
+ .contact-card img {
+  max-height: 25px;
+  margin: 0 20px;
+ }
+
+
 /* Anchor Styling */
 #socials, #socials a {
   text-decoration: none;
