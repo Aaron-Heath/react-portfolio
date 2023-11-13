@@ -1,6 +1,8 @@
 :root {
   --accent: #84dccf;
+  --accentgold: #cc9933;
   --dark: #000f08;
+  --darkbg: rgba(0, 15, 8, .3);
   --bluemetal: #1c3738;
   --grey: #4d4847;
   --mint: #F4FFF8;
@@ -8,14 +10,12 @@
 }
 
 /* DEBUG STYLINGS ONLY */
-nav,
+/* nav,
 main {
   border: 2px red solid;
 }
 
-a {
-  text-decoration: none !important;
-}
+
 
 .row {
   border: 2px blue solid;
@@ -24,7 +24,7 @@ a {
 .row > .col-md-8,
 .row > .col-md-4 {
   border: 2px green dashed;
-}
+} */
 
 /* END DEBUG STYLINGS */
 
@@ -34,6 +34,10 @@ body {
 
 main {
   margin: 100px;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 /* Header Styling */
@@ -57,14 +61,20 @@ h2 {
   justify-content: center;
 }
 
+#contact-section h3 {
+  color: var(--mint);
+  margin-bottom: 20px;
+}
+
 .contact-card {
   display: flex;
   align-items: center;
   margin: 10px 20px;  
   height: 50px;
   width: 350px;
+  /* border-radius: 15px; */
 
-  background-color: rgba(0, 15, 8, .3);
+  background-color: var(--darkbg);
 
   color: var(--accent);
   font-weight: bold;
@@ -72,6 +82,32 @@ h2 {
  .contact-card img {
   max-height: 25px;
   margin: 0 20px;
+ }
+
+ #resume-btn {
+  margin-top: 15px !important;
+ }
+
+ #resume-btn>img {
+  max-height: 18px;
+  margin-right: 10px;
+ }
+
+ #contact-info .left-align {
+  display: flex;
+  justify-content: left;
+  width: 350px;
+ }
+
+ form {
+  background-color: var(--darkbg);
+  padding: 15px;
+  /* border-radius: 15px; */
+
+ }
+
+ form label {
+  color: var(--mint);
  }
 
 
@@ -92,7 +128,8 @@ h2 {
 }
 
 /* Contact btn */
-#contact-btn {
+#contact-btn,
+#resume-btn {
   margin: 50px 0 10px 0;
   padding: 10px 20px;
   border-radius: 0;
@@ -105,7 +142,12 @@ h2 {
   transition: .5s;
 }
 
-#contact-btn:hover {
+#resume-btn {
+  border-color: var(--accentgold);
+}
+
+#contact-btn:hover,
+#resume-btn:hover {
   background-color: var(--dark);
 }
 
