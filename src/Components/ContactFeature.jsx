@@ -4,6 +4,24 @@ import { Button, Form } from 'react-bootstrap'
 import DownloadIcon from '../icons/icons8-download-52.png'
 
 export default function ContactFeature() {
+  const handleSubmit = function(event) {
+    // Return if button was not clicked.
+    if(!event.target.matches("button")) {
+      return;
+    }
+
+    // Stop page from reloading automatically
+    event.preventDefault();
+
+    console.log(event.target)
+
+
+
+
+
+
+  }
+
   return (
     <div id="contact-section" class="row">
         <div class="row text-centered">
@@ -11,7 +29,7 @@ export default function ContactFeature() {
         </div>
         <div class="row">
             <section id="contact-email" class="col-md-6">
-              <Form>
+              <Form onClick={handleSubmit}>
                 <Form.Group className="mb-3" controlId="form-email">
                   <Form.Label>Email address</Form.Label>
                   <Form.Control type="email" placeholder="Enter email" />
@@ -24,6 +42,7 @@ export default function ContactFeature() {
                   <Form.Label>Message</Form.Label>
                   <Form.Control as="textarea" rows={4} placeholder="Your message..." />
                 </Form.Group>
+                <Button type="submit">Submit</Button>
               </Form>
             </section>
             <section id="contact-info" class="col-md-6">
