@@ -8,6 +8,8 @@ import ContactFeature from './Components/ContactFeature';
 let App = () => {
   const [page, setPage] = useState("home");
 
+  // Switch case determines which main page or "feature" should render.
+  // Child elements that can change this state should be passed the "setPage" function
   switch(page){
     case "contact":return (
       <>
