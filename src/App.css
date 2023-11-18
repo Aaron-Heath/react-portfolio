@@ -53,10 +53,39 @@ h2 {
 }
 
 .header-link {
+  position: relative;
   margin: 0 10px;
   padding: 2px;
+  text-align: center;
 
   cursor: pointer;
+}
+
+.header-link::after {
+  content:"";
+  position: absolute;
+
+  background-color: var(--accentgold);
+  
+  bottom:0;
+  height:2px;
+  width: 0;
+  left: 50%;
+  transition: .5s;
+  
+}
+
+.header-link:hover::after {
+  content:"";
+  position: absolute;
+
+  background-color: var(--accentgold);
+  
+  bottom:0;
+  height:2px;
+  width: 50%;
+  left: 25%;
+  
 }
 
 /* Contact Components */
