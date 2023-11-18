@@ -52,6 +52,13 @@ h2 {
   text-align: center;
 }
 
+.header-link {
+  margin: 0 10px;
+  padding: 2px;
+
+  cursor: pointer;
+}
+
 /* Contact Components */
 
 #contact-info {
