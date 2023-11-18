@@ -6,12 +6,12 @@ import ContactFeature from './Components/ContactFeature';
 
 
 let App = () => {
-  const [page, setPage] = useState("contact");
+  const [page, setPage] = useState("home");
 
   switch(page){
     case "contact":return (
       <>
-      <Header></Header>
+      <Header setPage={setPage}></Header>
       <main class="container">
         <ContactFeature/>
       </main>
@@ -20,7 +20,7 @@ let App = () => {
 
     default: return (
       <>
-      <Header></Header>
+      <Header setPage={setPage}></Header>
       <main class="container">
         <BioFeature/>
       </main>
