@@ -14,12 +14,6 @@ export default function ContactFeature() {
     event.preventDefault();
 
     console.log(event.target)
-
-
-
-
-
-
   }
 
   return (
@@ -42,7 +36,7 @@ export default function ContactFeature() {
                   <Form.Label>Message</Form.Label>
                   <Form.Control as="textarea" rows={4} placeholder="Your message..." />
                 </Form.Group>
-                <Button type="submit">Submit</Button>
+                <Button id="contact-submit"type="submit"></Button>
               </Form>
             </section>
             <section id="contact-info" class="col-md-6">

@@ -146,6 +146,28 @@ h2 {
   color: var(--mint);
  }
 
+ #contact-submit {
+  height: 42px;
+  width: 80px;
+
+  transition: .1s;
+ }
+
+ #contact-submit::after {
+  content:"Submit";
+  /* transition: .5s; */
+ }
+
+ #contact-submit:hover {
+  /* width: 100px; */
+  line-height: 7px;
+ }
+
+ #contact-submit:hover::after {
+  content:"Not Implemented";
+  font-size: 10px;
+ }
+
 
 /* Anchor Styling */
 #socials, #socials a {
