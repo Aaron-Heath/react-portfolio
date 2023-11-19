@@ -120,6 +120,44 @@ h2 {
   margin: 0 20px;
  }
 
+ /* Mouse is a pointer when the card is not clicked */
+#email-card div {
+  font-size: 15px;
+}
+
+#email-card a,
+#email-card span {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+ #email-card.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#email-card.options>div {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ #email-card:hover{
+  cursor: pointer;
+ }
+
+ #email-card.options {
+  cursor:auto;
+ }
+
+ #email-card img {
+  max-width: 25px;
+  margin: none;
+ }
+
  #resume-btn {
   margin-top: 15px !important;
  }
