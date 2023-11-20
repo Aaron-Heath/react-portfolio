@@ -5,11 +5,12 @@ import CopyIcon from '../icons/icons8-copy-96.png'
 
 export default function ContactCard({type, text, href}) {
     const [clicked, setClick] = useState(false);  
-    const [firstClick, setFirstClick] = useState(true)
+    const [firstClick, setFirstClick] = useState(true); 
+
     const myEmail = "aaron.heath5447@gmail.com";
     let icon;
 
-
+// Component Functions
     // Swich state on click
     function handleEmailClick(event) {
       console.log(`Clicked = ${clicked}`)
