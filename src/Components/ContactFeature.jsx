@@ -40,7 +40,7 @@ export default function ContactFeature() {
               </Form>
             </section>
             <section id="contact-info" class="col-md-6">
-            <ContactCard type="email" text="Email" href="mailto:aaron.heath5447@gmail.com"/>
+            <ContactCard type="email" text="Email" href="#"/>
               <ContactCard type="linkedin" text="LinkedIn" href="https://www.linkedin.com/in/aaron-heath-2b0a5510b/"/>
               <div class="left-align">
                 <Button id="resume-btn" variant="resume"><img src={DownloadIcon} alt="Download Icon"/>  Resume</Button>
