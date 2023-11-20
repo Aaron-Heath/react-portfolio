@@ -6,6 +6,7 @@ import CopyIcon from '../icons/icons8-copy-96.png'
 export default function ContactCard({type, text, href}) {
     const [clicked, setClick] = useState(false);  
     const [firstClick, setFirstClick] = useState(true)
+    const myEmail = "aaron.heath5447@gmail.com";
     let icon;
 
 
@@ -18,13 +19,16 @@ export default function ContactCard({type, text, href}) {
       }
 
       setClick(true);
-      // Return if clicked card is not the email card or if it's already clicked.
-      // if(event.target.type === "linkedin" || clicked === true) {
-      //   return;
-      // }
+    }
 
-      // // Change state to rerender
-      // setCard("true");
+    // https://www.freecodecamp.org/news/copy-text-to-clipboard-javascript/
+    async function copyToClipboard() {
+      try {
+        await navigator.clipboard.writeText(myEmail);
+        console.log("Copied email to clipboard!")
+      } catch (e) {
+        console.log(e);
+      }
     }
     
   if(type === "email") {
@@ -46,9 +50,10 @@ export default function ContactCard({type, text, href}) {
                   {"Outlook"}
                 </a>
               </div>
-              <div>
+              <div onClick={copyToClipboard}>
                 <img src={CopyIcon} alt="Copy Icon"/>
-                <span>{"Copy"}</span>
+                <span>{"Copy Email"}</span>
+                {/* <span>{"clipboard"}</span> */}
               </div>
           </div>
         // </a>
