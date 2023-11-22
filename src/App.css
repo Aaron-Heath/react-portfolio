@@ -52,6 +52,42 @@ h2 {
   text-align: center;
 }
 
+.header-link {
+  position: relative;
+  margin: 0 10px;
+  padding: 2px;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.header-link::after {
+  content:"";
+  position: absolute;
+
+  background-color: var(--accentgold);
+  
+  bottom:0;
+  height:2px;
+  width: 0;
+  left: 50%;
+  transition: .5s;
+  
+}
+
+.header-link:hover::after {
+  content:"";
+  position: absolute;
+
+  background-color: var(--accentgold);
+  
+  bottom:0;
+  height:2px;
+  width: 50%;
+  left: 25%;
+  
+}
+
 /* Contact Components */
 
 #contact-info {
@@ -84,6 +120,71 @@ h2 {
   margin: 0 20px;
  }
 
+ /* Mouse is a pointer when the card is not clicked */
+#email-card div {
+  font-size: 13px;
+}
+
+#email-card a,
+#email-card span {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+ #email-card.options {
+  display: flex;
+  position:relative;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+#email-card.options .tooltip {
+  position: absolute;
+  bottom: 60px;
+
+  text-align: center;
+  font-size: 12px;
+
+  width: 150px;
+  border-radius: 15px;
+
+  /* background-color: red; */
+  color: var(--accentgold);
+}
+
+#email-card.options>div {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#email-card.options>div:hover {
+  cursor:pointer;
+}
+
+ #email-card:hover{
+  cursor: pointer;
+ }
+
+ #email-card.options {
+  cursor:auto;
+ }
+
+ #email-card.options img {
+  max-width: 25px;
+  max-height: 19px;
+  margin: none;
+ }
+ 
+ #email-card img {
+  max-width: 25px;
+  /* max-height: 19px; */
+  margin: none;
+ }
+
  #resume-btn {
   margin-top: 15px !important;
  }
@@ -108,6 +209,28 @@ h2 {
 
  form label {
   color: var(--mint);
+ }
+
+ #contact-submit {
+  height: 42px;
+  width: 80px;
+
+  transition: .1s;
+ }
+
+ #contact-submit::after {
+  content:"Submit";
+  /* transition: .5s; */
+ }
+
+ #contact-submit:hover {
+  /* width: 100px; */
+  line-height: 7px;
+ }
+
+ #contact-submit:hover::after {
+  content:"Not Implemented";
+  font-size: 10px;
  }
 
 
@@ -220,5 +343,20 @@ h2 {
 
 span.navbar-brand {
   font-size: 25px;
+}
+
+
+/* CSS Key Frames */
+@keyframes tooltip-fade {
+  0% { opacity: 0; }
+  10% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {opacity: 0;}
+  
+}
+
+.tooltip {
+  animation: tooltip-fade 1.75s ease-in-out 1;
+  
 }
 
