@@ -12,9 +12,9 @@ export default function BioFeature() {
     let featureText = "My path to web development and software engineering began with 12 hour nights at a 911 Center in Montgomery County, Pennsylvania..."
     let featureId = "bio-feature"
   return (
-    <div class="row">
-        <div class="row col-md-8">
-          <div class="col-md-6">
+    <div className="row">
+        <div className="row col-md-8">
+          <div className="col-md-6">
             <Name inline={false} />
             <div id="socials">
               <Link href={"https://github.com/Aaron-Heath"} text="Github"/>  |  <Link href="https://www.linkedin.com/in/aaron-heath-2b0a5510b/" text="LinkedIn"/>
@@ -22,11 +22,11 @@ export default function BioFeature() {
             </div>
             <Button id="contact-btn" variant="contact">CONTACT ME</Button>
           </div>
-          <div class="col-md-6">
+          <div className="col-md-6">
             <img alt="Aaron Heath Portfolio Picture" src={BioPic} id="bio-pic"></img>
           </div>
         </div>
-        <div class ="col-md-4">
+        <div className ="col-md-4">
           <FeatureCard header={featureHeader} text={featureText} title={featureTitle} id={featureId} link="#"></FeatureCard>
         </div>
         

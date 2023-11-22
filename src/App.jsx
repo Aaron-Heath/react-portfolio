@@ -14,7 +14,7 @@ let App = () => {
     case "contact":return (
       <>
       <Header setPage={setPage}></Header>
-      <main class="container">
+      <main className="container">
         <ContactFeature/>
       </main>
       </>
@@ -23,7 +23,7 @@ let App = () => {
     default: return (
       <>
       <Header setPage={setPage}></Header>
-      <main class="container">
+      <main className="container">
         <BioFeature/>
       </main>
       </>);
