@@ -4,10 +4,10 @@ export default function Name({inline=true}) {
     if(inline === true) {
         return (
             <>
-            <div class="branded-name">
-                <p class="mint">Aaron Heath<span class="accent">.</span></p>
+            <div className="branded-name">
+                <p className="mint">Aaron Heath<span className="accent">.</span></p>
             </div>
-            <div class="dash">
+            <div className="dash">
 
             </div>
             </>
@@ -16,11 +16,11 @@ export default function Name({inline=true}) {
     }
     return (
         <>
-        <div class="branded-name">
-            <p class="mint">Aaron</p>
-            <p class="mint">Heath<span class="accent">.</span></p>
+        <div className="branded-name">
+            <p className="mint">Aaron</p>
+            <p className="mint">Heath<span className="accent">.</span></p>
         </div>
-        <div class="dash">
+        <div className="dash">
             
         </div>
         </>
