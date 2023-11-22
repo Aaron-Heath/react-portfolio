@@ -1,6 +1,8 @@
 :root {
   --accent: #84dccf;
+  --accentgold: #cc9933;
   --dark: #000f08;
+  --darkbg: rgba(0, 15, 8, .3);
   --bluemetal: #1c3738;
   --grey: #4d4847;
   --mint: #F4FFF8;
@@ -8,10 +10,12 @@
 }
 
 /* DEBUG STYLINGS ONLY */
-nav,
+/* nav,
 main {
   border: 2px red solid;
 }
+
+
 
 .row {
   border: 2px blue solid;
@@ -20,7 +24,7 @@ main {
 .row > .col-md-8,
 .row > .col-md-4 {
   border: 2px green dashed;
-}
+} */
 
 /* END DEBUG STYLINGS */
 
@@ -31,6 +35,204 @@ body {
 main {
   margin: 100px;
 }
+
+a {
+  text-decoration: none !important;
+}
+
+/* Header Styling */
+h2 {
+  color: var(--accent) !important;
+  font-weight: bold !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.header-link {
+  position: relative;
+  margin: 0 10px;
+  padding: 2px;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.header-link::after {
+  content:"";
+  position: absolute;
+
+  background-color: var(--accentgold);
+  
+  bottom:0;
+  height:2px;
+  width: 0;
+  left: 50%;
+  transition: .5s;
+  
+}
+
+.header-link:hover::after {
+  content:"";
+  position: absolute;
+
+  background-color: var(--accentgold);
+  
+  bottom:0;
+  height:2px;
+  width: 50%;
+  left: 25%;
+  
+}
+
+/* Contact Components */
+
+#contact-info {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-section h3 {
+  color: var(--mint);
+  margin-bottom: 20px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;  
+  height: 50px;
+  width: 350px;
+  /* border-radius: 15px; */
+
+  background-color: var(--darkbg);
+
+  color: var(--accent);
+  font-weight: bold;
+}
+ .contact-card img {
+  max-height: 25px;
+  margin: 0 20px;
+ }
+
+ /* Mouse is a pointer when the card is not clicked */
+#email-card div {
+  font-size: 13px;
+}
+
+#email-card a,
+#email-card span {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+ #email-card.options {
+  display: flex;
+  position:relative;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+#email-card.options .tooltip {
+  position: absolute;
+  bottom: 60px;
+
+  text-align: center;
+  font-size: 12px;
+
+  width: 150px;
+  border-radius: 15px;
+
+  /* background-color: red; */
+  color: var(--accentgold);
+}
+
+#email-card.options>div {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#email-card.options>div:hover {
+  cursor:pointer;
+}
+
+ #email-card:hover{
+  cursor: pointer;
+ }
+
+ #email-card.options {
+  cursor:auto;
+ }
+
+ #email-card.options img {
+  max-width: 25px;
+  max-height: 19px;
+  margin: none;
+ }
+ 
+ #email-card img {
+  max-width: 25px;
+  /* max-height: 19px; */
+  margin: none;
+ }
+
+ #resume-btn {
+  margin-top: 15px !important;
+ }
+
+ #resume-btn>img {
+  max-height: 18px;
+  margin-right: 10px;
+ }
+
+ #contact-info .left-align {
+  display: flex;
+  justify-content: left;
+  width: 350px;
+ }
+
+ form {
+  background-color: var(--darkbg);
+  padding: 15px;
+  /* border-radius: 15px; */
+
+ }
+
+ form label {
+  color: var(--mint);
+ }
+
+ #contact-submit {
+  height: 42px;
+  width: 80px;
+
+  transition: .1s;
+ }
+
+ #contact-submit::after {
+  content:"Submit";
+  /* transition: .5s; */
+ }
+
+ #contact-submit:hover {
+  /* width: 100px; */
+  line-height: 7px;
+ }
+
+ #contact-submit:hover::after {
+  content:"Not Implemented";
+  font-size: 10px;
+ }
+
 
 /* Anchor Styling */
 #socials, #socials a {
@@ -49,7 +251,8 @@ main {
 }
 
 /* Contact btn */
-#contact-btn {
+#contact-btn,
+#resume-btn {
   margin: 50px 0 10px 0;
   padding: 10px 20px;
   border-radius: 0;
@@ -62,7 +265,12 @@ main {
   transition: .5s;
 }
 
-#contact-btn:hover {
+#resume-btn {
+  border-color: var(--accentgold);
+}
+
+#contact-btn:hover,
+#resume-btn:hover {
   background-color: var(--dark);
 }
 
@@ -135,5 +343,20 @@ main {
 
 span.navbar-brand {
   font-size: 25px;
+}
+
+
+/* CSS Key Frames */
+@keyframes tooltip-fade {
+  0% { opacity: 0; }
+  10% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {opacity: 0;}
+  
+}
+
+.tooltip {
+  animation: tooltip-fade 1.75s ease-in-out 1;
+  
 }
 
