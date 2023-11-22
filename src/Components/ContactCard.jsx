@@ -39,14 +39,22 @@ export default function ContactCard({type, text, href}) {
     function renderTooltip() {
       // Select relevant elements
       const $emailCard = document.getElementById("email-card");
+      const $copyDiv = document.getElementById("clipboard-copy");
       
       // Create ToolTip Element
       const $tooltip = document.createElement("div");
       
       // Set Attributes
       $tooltip.setAttribute("class", "tooltip");
+      $tooltip.textContent = "Copied to clipboard"
       // Append
-      $emailCard.appendChild($tooltip);
+      $copyDiv.appendChild($tooltip);
+
+      // Delete all tooltips after 2s
+      setTimeout( ()=> {
+        const $tooltips = document.querySelectorAll(".tooltip");
+        $tooltips.forEach(($element) => $element.remove());
+      }, 2000);
     }
     
   if(type === "email") {

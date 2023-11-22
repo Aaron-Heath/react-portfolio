@@ -139,13 +139,18 @@ h2 {
   align-items: center;
 }
 
-#email-card.options > .tooltip {
+#email-card.options .tooltip {
   position: absolute;
+  bottom: 60px;
 
-  background-color: red;
+  text-align: center;
+  font-size: 12px;
 
-  height: 50px;
-  width: 50px;
+  width: 150px;
+  border-radius: 15px;
+
+  /* background-color: red; */
+  color: var(--accentgold);
 }
 
 #email-card.options>div {
@@ -344,14 +349,14 @@ span.navbar-brand {
 /* CSS Key Frames */
 @keyframes tooltip-fade {
   0% { opacity: 0; }
-  40% {opacity: 1;}
-  60% {opacity: 1;}
+  10% {opacity: 1;}
+  80% {opacity: 1;}
   100% {opacity: 0;}
   
 }
 
 .tooltip {
-  animation: tooltip-fade .75s ease-in-out 1;
+  animation: tooltip-fade 1.75s ease-in-out 1;
   
 }
 
