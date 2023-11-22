@@ -22,7 +22,7 @@ export default function BioFeature() {
             </div>
             <Button id="contact-btn" variant="contact">CONTACT ME</Button>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6" id="bio-pic-container">
             <img alt="Aaron Heath Portfolio Picture" src={BioPic} id="bio-pic"></img>
           </div>
         </div>

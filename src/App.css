@@ -296,6 +296,27 @@ h2 {
 #bio-pic {
   max-width: 100%;
   margin-top: 100px;
+
+}
+
+
+/* Box shadow to soften edges of image.
+
+https://stackoverflow.com/questions/21414925/why-doesnt-inset-box-shadow-work-over-images */
+#bio-pic-container::after {
+  height: 100%;
+  width: 100%;
+  display:block;
+  position:absolute;
+  bottom: 0;
+
+  content: '';
+  /* color: red; */
+  box-shadow: inset 0px -5px 18px 5px var(--bluemetal), inset 0px -5px 18px 5px var(--bluemetal) ;
+}
+
+#bio-pic-container {
+  position: relative;
 }
 
 #header {
