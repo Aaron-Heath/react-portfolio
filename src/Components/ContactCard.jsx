@@ -41,10 +41,12 @@ export default function ContactCard({type, text, href}) {
       const $emailCard = document.getElementById("email-card");
       
       // Create ToolTip Element
-
+      const $tooltip = document.createElement("div");
+      
       // Set Attributes
-
+      $tooltip.setAttribute("class", "tooltip");
       // Append
+      $emailCard.appendChild($tooltip);
     }
     
   if(type === "email") {

@@ -133,8 +133,19 @@ h2 {
 
  #email-card.options {
   display: flex;
+  position:relative;
+
   justify-content: space-around;
   align-items: center;
+}
+
+#email-card.options > .tooltip {
+  position: absolute;
+
+  background-color: red;
+
+  height: 50px;
+  width: 50px;
 }
 
 #email-card.options>div {
@@ -340,7 +351,7 @@ span.navbar-brand {
 }
 
 .tooltip {
-  animation: tooltip-fade .75s ease-in-out;
+  animation: tooltip-fade .75s ease-in-out 1;
   
 }
 
