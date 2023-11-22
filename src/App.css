@@ -329,3 +329,18 @@ span.navbar-brand {
   font-size: 25px;
 }
 
+
+/* CSS Key Frames */
+@keyframes tooltip-fade {
+  0% { opacity: 0; }
+  40% {opacity: 1;}
+  60% {opacity: 1;}
+  100% {opacity: 0;}
+  
+}
+
+.tooltip {
+  animation: tooltip-fade .75s ease-in-out;
+  
+}
+

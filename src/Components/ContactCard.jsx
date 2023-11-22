@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
+import { Tooltip, OverlayTrigger } from 'react-bootstrap'
+
 import EmailIcon from '../icons/icons8-email-96.png'
 import LinkedIcon from '../icons/icons8-linkedin-100.png'
 import CopyIcon from '../icons/icons8-copy-96.png'
 
 export default function ContactCard({type, text, href}) {
     const [clicked, setClick] = useState(false);  
-    const [firstClick, setFirstClick] = useState(true); 
 
     const myEmail = "aaron.heath5447@gmail.com";
     let icon;
@@ -23,13 +24,27 @@ export default function ContactCard({type, text, href}) {
     }
 
     // https://www.freecodecamp.org/news/copy-text-to-clipboard-javascript/
-    async function copyToClipboard() {
+    async function copyToClipboard(event) {
       try {
         await navigator.clipboard.writeText(myEmail);
-        console.log("Copied email to clipboard!")
+        console.log("Copied email to clipboard!");
+
+        // render tooltip
+        renderTooltip();
       } catch (e) {
         console.log(e);
       }
+    }
+
+    function renderTooltip() {
+      // Select relevant elements
+      const $emailCard = document.getElementById("email-card");
+      
+      // Create ToolTip Element
+
+      // Set Attributes
+
+      // Append
     }
     
   if(type === "email") {
@@ -39,7 +54,6 @@ export default function ContactCard({type, text, href}) {
 
       // Render email options card
       return(
-        // <a href={href}>
           <div className="contact-card options" id="email-card" onClick={handleEmailClick}>
               <div>
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aaron.heath5447@gmail.com" target="_blank" rel="noopener noreferrer"><img src={"https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"} alt="Gmail Icon"/>
@@ -51,22 +65,20 @@ export default function ContactCard({type, text, href}) {
                   {"Outlook"}
                 </a>
               </div>
-              <div onClick={copyToClipboard}>
-                <img src={CopyIcon} alt="Copy Icon"/>
-                <span>{"Copy Email"}</span>
-                {/* <span>{"clipboard"}</span> */}
-              </div>
+
+
+                <div id="clipboard-copy" onClick={copyToClipboard}>
+                  <img src={CopyIcon} alt="Copy Icon"/>
+                  <span>{"Copy Email"}</span>
+                </div>
           </div>
-        // </a>
     )
     }
-    // render standard card
+
     return(
-      // <a href={href}>
         <div className="contact-card" id="email-card" onClick={handleEmailClick}>
             <img src={EmailIcon} alt="Email Icon"/> {text}
         </div>
-      // </a>
     )
 
     
