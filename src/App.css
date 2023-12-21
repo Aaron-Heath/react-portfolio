@@ -57,6 +57,7 @@ h2 {
   margin: 0 10px;
   padding: 2px;
   text-align: center;
+  color: var(--mint);
 
   cursor: pointer;
 }
@@ -88,7 +89,65 @@ h2 {
   
 }
 
+/* About styling */
+#about-section{
+  background-color: var(--dark);
+
+}
+
+
+
+/* Projects styling */
+#project-section{
+  height: 500px;
+  width: auto;
+  /* background-color: red; */
+}
+
+.project-card {
+  background-color: var(--darkbg);
+  color: var(--mint);
+  border-radius: 15px 0 15px 0;
+
+  min-height: 250px;
+}
+
+.project-img {
+  min-height: 70%;
+}
+
+
+.project-description{ 
+  display:none;
+}
+
+.project-tag {
+  /* TODO: Fix tag styling */
+  display:inline-block;
+  margin: 0 10px 0 0;
+  padding: 3px 15px;
+  border-radius: 8px;
+  background-color: var(--dark);
+}
+
+.project-card:hover .project-description {
+  display: block;
+}
+
+.project-card:hover .project-title {
+  color: var(--accentgold);
+}
+
+.project-card:hover .project-img{
+  display:none;
+  height:0px;
+
+}
+
+
 /* Contact Components */
+
+/* #contact-section{} */
 
 #contact-info {
   display:flex;
@@ -97,7 +156,7 @@ h2 {
   justify-content: center;
 }
 
-#contact-section h3 {
+.section-title{
   color: var(--mint);
   margin-bottom: 20px;
 }
@@ -285,12 +344,16 @@ h2 {
   margin-bottom: 20px;
 }
 
-.feature-card a {
+.feature-card span {
   position: absolute;
   color: var(--accent);
 
   font-weight: bold;
   text-decoration: none;
+}
+
+.feature-card span:hover {
+  cursor: pointer;
 }
 
 #bio-pic {
@@ -381,3 +444,9 @@ span.navbar-brand {
   
 }
 
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  /* Remove picture */
+  
+}

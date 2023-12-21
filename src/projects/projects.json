@@ -1,0 +1,21 @@
+[
+    {
+        "title": "PlantPoppa",
+        "description": "A plant watering application built on React and Dropwizard.",
+        "languages": [
+            "Java",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "tags": [
+            "Dropwizard",
+            "React",
+            "REST"
+        ],
+        "repository": "https://github.com/Aaron-Heath/plantpoppa-auth",
+        "screenshot": null,
+        "link": null
+
+    }
+]

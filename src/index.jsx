@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals.js';
  * React Boostrap Config
  */
 import "react-bootstrap/dist/react-bootstrap.js"
-import "../node_modules/bootstrap/dist/css/bootstrap.css"
+// import "../node_modules/bootstrap/dist/css/bootstrap.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

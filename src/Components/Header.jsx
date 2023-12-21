@@ -21,7 +21,7 @@ export default function Header({setPage}) {
           <Nav>
             <span id="home" className="header-link">Home</span>
             <span className="header-link" >About Me</span>
-            <span className="header-link" >Projects</span>
+            <span className="header-link" id="projects" >Projects</span>
             <span  className="header-link" id="contact">Contact</span>
           </Nav>
         </Container>

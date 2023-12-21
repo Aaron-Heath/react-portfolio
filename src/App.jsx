@@ -5,6 +5,7 @@ import Header from './components/Header';
 import BioFeature from './components/BioFeature';
 import ContactFeature from './components/ContactFeature';
 import AboutMe from './about/AboutMe';
+import ProjectsFeature from './projects/ProjectsFeature';
 
 
 let App = () => {
@@ -37,6 +38,7 @@ let App = () => {
       <main className="container">
         <BioFeature/>
         <AboutMe/>
+        <ProjectsFeature></ProjectsFeature>
         <ContactFeature/>
       </main>
       </>);

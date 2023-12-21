@@ -6,7 +6,7 @@ export default function FeatureCard({header,title,text, link, id}) {
       <h2>{header}</h2>
       <h3>{title}</h3>
       <p>{text}</p>
-      <a href={link}>Learn more</a>
+      <span>Learn more</span>
     </div>
   )
 }
