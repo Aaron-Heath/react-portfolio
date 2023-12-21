@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import './App.css';
-import Header from './Components/Header';
-import BioFeature from './Components/BioFeature';
-import ContactFeature from './Components/ContactFeature';
+import Header from './components/Header';
+import BioFeature from './components/BioFeature';
+import ContactFeature from './components/ContactFeature';
+import AboutMe from './about/AboutMe';
 
 
 let App = () => {
@@ -20,11 +22,22 @@ let App = () => {
       </>
     );
 
+    case "projects": return (
+      <>
+      <Header setPage={setPage}></Header>
+      <main className="container">
+
+      </main>
+      </>
+    )
+
     default: return (
       <>
       <Header setPage={setPage}></Header>
       <main className="container">
         <BioFeature/>
+        <AboutMe/>
+        <ContactFeature/>
       </main>
       </>);
   }
