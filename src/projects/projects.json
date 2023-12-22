@@ -1,7 +1,7 @@
 [
     {
         "title": "PlantPoppa",
-        "description": "A plant watering application built on React and Dropwizard.",
+        "description": "A plant care tracking application built on React and Dropwizard. Designed to track when you've watered your plants, and remind you when they need to be watered next.",
         "languages": [
             "Java",
             "JavaScript",
@@ -10,12 +10,27 @@
         ],
         "tags": [
             "Dropwizard",
-            "React",
-            "REST"
+            "React"
         ],
         "repository": "https://github.com/Aaron-Heath/plantpoppa-auth",
         "screenshot": null,
         "link": null
+
+    },
+    {
+        "title": "Notes App",
+        "description": "A note-taking application that allows users to create and delte notes that are stored in on a server. Built on Express.",
+        "languages": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "tags": [
+            "Express"
+        ],
+        "repository": "https://github.com/Aaron-Heath/plantpoppa-auth",
+        "screenshot": null,
+        "link": "https://raw.githubusercontent.com/Aaron-Heath/notes-app/main/assets/app_screenshot.png"
 
     }
 ]
