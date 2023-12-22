@@ -96,55 +96,6 @@ h2 {
 }
 
 
-
-/* Projects styling */
-#project-section{
-  height: 500px;
-  width: auto;
-  /* background-color: red; */
-}
-
-.project-card {
-  background-color: var(--darkbg);
-  color: var(--mint);
-  border-radius: 15px 0 15px 0;
-
-  min-height: 250px;
-}
-
-.project-img {
-  min-height: 70%;
-}
-
-
-.project-description{ 
-  display:none;
-}
-
-.project-tag {
-  /* TODO: Fix tag styling */
-  display:inline-block;
-  margin: 0 10px 0 0;
-  padding: 3px 15px;
-  border-radius: 8px;
-  background-color: var(--dark);
-}
-
-.project-card:hover .project-description {
-  display: block;
-}
-
-.project-card:hover .project-title {
-  color: var(--accentgold);
-}
-
-.project-card:hover .project-img{
-  display:none;
-  height:0px;
-
-}
-
-
 /* Contact Components */
 
 /* #contact-section{} */

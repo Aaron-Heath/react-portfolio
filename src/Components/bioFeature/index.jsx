@@ -1,10 +1,10 @@
 import React from 'react'
 
 import { Button, Navbar } from 'react-bootstrap';
-import Name from './Name'
-import Link from './Link';
-import FeatureCard from './FeatureCard';
-import BioPic from '../images/342bb528-6b35-4cab-aec3-6a8fe0c4f7c4.png'
+import Name from '../Name'
+import Link from '../Link';
+import FeatureCard from '../FeatureCard';
+import BioPic from '../../images/342bb528-6b35-4cab-aec3-6a8fe0c4f7c4.png'
 
 export default function BioFeature() {
     let featureHeader = "INTRODUCTION"

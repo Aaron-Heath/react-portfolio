@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import './App.css';
 import Header from './components/Header';
-import BioFeature from './components/BioFeature';
+import BioFeature from './components/bioFeature';
 import ContactFeature from './components/ContactFeature';
 import AboutMe from './about/AboutMe';
 import ProjectsFeature from './projects/ProjectsFeature';
