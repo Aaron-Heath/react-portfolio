@@ -1,8 +1,20 @@
+:root {
+  --transition-value: .7s;
+  --accent: #84dccf;
+  --accentgold: #cc9933;
+  --dark: #000f08;
+  --darkbg: rgba(0, 15, 8, .3);
+  --bluemetal: #1c3738;
+  --grey: #4d4847;
+  --mint: #F4FFF8;
+  --blugrey: #8bAAAD;
+}
+
 /* Projects styling */
 #project-section{
     min-height: 500px;
     width: auto;
-    /* background-color: red; */
+    /* background-color: red solid 2px; */
   }
   
 .project-card {
@@ -10,8 +22,9 @@ position: relative;
 background-color: var(--darkbg);
 color: var(--mint);
 border-radius: 15px 0 15px 0;
+/* border: blue dashed 2px; */
 
-min-height: 338px;
+/* min-height: 338px; */
 padding: 0;
 margin: .5%
 }
@@ -25,29 +38,33 @@ height: 70%;
 overflow: hidden;
 
 
-transition: .5s;
+transition: var(--transition-value);
 }
 
 .project-img img {
-/* max-height: 100%;
-max-width: 100%; */
 border-radius: 15px 0 0 0;
 
 padding:0;
-transition: .5s;
+transition: var(--transition-value);
 }
 
-.project-title h2{
-transition: .5s;
+.project-title h4{
+transition: var(--transition-value);
 }
 
 .project-data {
 padding: 0 2%;
+/* border: green dashed 2px; */
 }
 
 
 .project-description{ 
-display:none;
+display:inline-block;
+opacity: 0;
+height: 0;
+transition: var(--transition-value);
+overflow:hidden;
+/* border: red dashed 2px; */
 }
 
 .project-tag {
@@ -57,14 +74,27 @@ margin: 0 10px 0 0;
 padding: 3px 15px;
 border-radius: 8px;
 background-color: var(--dark);
+
+}
+
+.project-card:hover{
+  overflow: hidden;
+  /* https://getcssscan.com/css-box-shadow-examples */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 
 .project-card:hover .project-img {
-  height: 0;
+  height: 30%;
+}
+
+.project-card:hover h4 {
+  color: var(--accentgold);
 }
 
 .project-card:hover .project-description {
-display: block;
+  height: 150px;
+  
+  opacity: 1;
 }
 

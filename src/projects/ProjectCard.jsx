@@ -17,6 +17,8 @@ export default function ProjectCard({project}) {
         }
         let imgFound;
 
+        $target.setAttribute('style',`height:${$target.offsetHeight}px`);
+
         // traverse dom down to img-container
         for(let $child of $target.children) {
             console.log($child);
@@ -31,7 +33,7 @@ export default function ProjectCard({project}) {
                         console.log(`Img is: ${$image}`);
                         imgFound = true;
 
-                        $image.setAttribute('style',`height:${$image.offsetHeight}`);
+                        $image.setAttribute('style',`height:${$image.offsetHeight}px`);
                         return;
                     }
                 }
@@ -64,7 +66,7 @@ export default function ProjectCard({project}) {
     };
 
   return (
-    <div onMouseEnter={handleHover} className='project-card col-4'>
+    <div onMouseEnter={handleHover} className='project-card col-4' /*style={{height: "344px"}}*/>
         <div className="row project-img">
             {/* Image Goes here */}
             <img src={project.link} alt="placeholder"/>
