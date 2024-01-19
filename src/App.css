@@ -57,6 +57,7 @@ h2 {
   margin: 0 10px;
   padding: 2px;
   text-align: center;
+  color: var(--mint);
 
   cursor: pointer;
 }
@@ -88,7 +89,16 @@ h2 {
   
 }
 
+/* About styling */
+#about-section{
+  background-color: var(--dark);
+
+}
+
+
 /* Contact Components */
+
+/* #contact-section{} */
 
 #contact-info {
   display:flex;
@@ -97,7 +107,7 @@ h2 {
   justify-content: center;
 }
 
-#contact-section h3 {
+.section-title{
   color: var(--mint);
   margin-bottom: 20px;
 }
@@ -285,7 +295,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-.feature-card a {
+.feature-card span {
   position: absolute;
   color: var(--accent);
 
@@ -293,9 +303,34 @@ h2 {
   text-decoration: none;
 }
 
+.feature-card span:hover {
+  cursor: pointer;
+}
+
 #bio-pic {
   max-width: 100%;
   margin-top: 100px;
+
+}
+
+
+/* Box shadow to soften edges of image.
+
+https://stackoverflow.com/questions/21414925/why-doesnt-inset-box-shadow-work-over-images */
+#bio-pic-container::after {
+  height: 100%;
+  width: 100%;
+  display:block;
+  position:absolute;
+  bottom: 0;
+
+  content: '';
+  /* color: red; */
+  box-shadow: inset 0px -5px 18px 5px var(--bluemetal), inset 0px -5px 18px 5px var(--bluemetal) ;
+}
+
+#bio-pic-container {
+  position: relative;
 }
 
 #header {
@@ -360,3 +395,9 @@ span.navbar-brand {
   
 }
 
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  /* Remove picture */
+  
+}

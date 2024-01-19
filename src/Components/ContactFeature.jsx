@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactCard from './ContactCard'
+import SectionTitle from './SectionTitle'
 import { Button, Form } from 'react-bootstrap'
 import DownloadIcon from '../icons/icons8-download-52.png'
 
@@ -69,10 +70,8 @@ export default function ContactFeature() {
   }
 
   return (
-    <div id="contact-section" className="row">
-        <div className="row text-centered">
-            <h3>Contact Me</h3>
-        </div>
+    <div id="contact-section" className="row section-row">
+        <SectionTitle title={"Contact Me"}/>
         <div className="row">
             <section id="contact-email" className="col-md-6">
               <Form onClick={handleSubmit}>
