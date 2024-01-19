@@ -60,30 +60,34 @@ export default function ProjectCard({project}) {
         TAGS.push(<li className="project-tag">{tag}</li>)
     }
 
-    // Replace link if null
-    if (!project.link) {
-        project.link = "https://placehold.co/600x400/EEE/31343C"
+    // Replace screenshot if null
+    if (!project.screenshot) {
+        project.screenshot = "https://placehold.co/600x400/EEE/31343C"
     };
 
+    let link;
+    link = project.link ? project.link : project.repository;
+
   return (
-    <div onMouseEnter={handleHover} className='project-card col-3' /*style={{height: "344px"}}*/>
-        <div className="row project-img">
-            {/* Image Goes here */}
-            <img src={project.link} alt="placeholder"/>
-        </div>
-        <div className='row project-data'>
-            <div className="row project-title">
-                <h4>{project.title}</h4>
+    
+        <div onMouseEnter={handleHover} className='project-card col-3' /*style={{height: "344px"}}*/>
+            <div className="row project-img">
+                {/* Image Goes here */}
+                <img src={project.screenshot} alt="placeholder"/>
             </div>
+            <div className='row project-data'>
+                <div className="row project-title">
+                <a href={link} target="_blank" rel="noopener noreferrer"><h4>{project.title}</h4></a>
+                </div>
 
-            <div className='row project-description'>
-                <p>{project.description}</p>
-            </div>
+                <div className='row project-description'>
+                    <p>{project.description}</p>
+                </div>
 
-            <div className='row project-tags'>
-                <ul>Tags: {TAGS}</ul>
+                <div className='row project-tags'>
+                    <ul>Tags: {TAGS}</ul>
+                </div>
             </div>
         </div>
-    </div>
   )
 }
