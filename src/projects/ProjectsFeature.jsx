@@ -15,7 +15,7 @@ export default function ProjectsFeature() {
   return (
     <div id="project-section">
       <SectionTitle title={"Projects"}/>
-      <div className='row'>
+      <div className='row d-flex justify-content-around'>
         {PROJECT_CARDS}
       </div>
     </div>

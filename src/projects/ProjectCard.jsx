@@ -66,7 +66,7 @@ export default function ProjectCard({project}) {
     };
 
   return (
-    <div onMouseEnter={handleHover} className='project-card col-4' /*style={{height: "344px"}}*/>
+    <div onMouseEnter={handleHover} className='project-card col-3' /*style={{height: "344px"}}*/>
         <div className="row project-img">
             {/* Image Goes here */}
             <img src={project.link} alt="placeholder"/>
