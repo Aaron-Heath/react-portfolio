@@ -1,0 +1,12 @@
+#about-section h3 {
+    margin-top: 75px;
+}
+
+#about-section {
+    padding-bottom: 75px;
+    /* padding-right: 40px; */
+}
+
+b {
+    color: var(--accentgold);
+}

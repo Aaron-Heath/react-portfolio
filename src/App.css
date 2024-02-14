@@ -30,10 +30,15 @@ main {
 
 body {
   background-color: var(--bluemetal) !important;
+  overflow: hidden;
 }
 
 main {
-  margin: 100px;
+  margin: 5%;
+  max-height: 100vh;
+}
+.section-row p {
+ color: var(--mint);
 }
 
 a {
