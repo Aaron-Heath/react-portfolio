@@ -35,6 +35,9 @@ body {
 main {
   margin: 100px;
 }
+.section-row p {
+ color: var(--mint);
+}
 
 a {
   text-decoration: none !important;
