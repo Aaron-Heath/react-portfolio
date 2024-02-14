@@ -23,11 +23,20 @@ let App = () => {
       </>
     );
 
+    case "about": return (
+      <>
+        <Header setPage={setPage}></Header>
+        <main className="container">
+          <AboutMe/>
+        </main>
+      </>
+    );
+
     case "projects": return (
       <>
       <Header setPage={setPage}></Header>
       <main className="container">
-
+        <ProjectsFeature/>
       </main>
       </>
     )
@@ -37,9 +46,9 @@ let App = () => {
       <Header setPage={setPage}></Header>
       <main className="container">
         <BioFeature/>
-        <AboutMe/>
+        {/* <AboutMe/>
         <ProjectsFeature></ProjectsFeature>
-        <ContactFeature/>
+        <ContactFeature/> */}
       </main>
       </>);
   }

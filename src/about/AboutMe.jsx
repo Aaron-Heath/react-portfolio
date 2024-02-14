@@ -5,6 +5,9 @@ import SectionTitle from '../components/SectionTitle'
 
 export default function AboutMe() {
   const styles = {
+    textPortion: {
+      paddingRight: "40px"
+    },
     h4Header: {
       color: "var(--accentgold)",
       marginTop: "20px"
@@ -38,7 +41,7 @@ export default function AboutMe() {
             <img  src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/postgresql/postgresql-original.svg" width={styles.icons.size} height={styles.icons.size} alt="Postgresql" title="Postgresql"/>
         </div>
       </div>
-      <div className='col-md-8'>
+      <div style={styles.textPortion} className='col-md-8'>
         <p>My path to web development and software engineering began with 12 hour nights at a 911 Center in Montgomery County, Pennsylvania. What started as a hobby and budding interest quickly snowballed  into a love and passion for coding, fueling my self-guided learning for several years.</p>
         <p>In that time, I've grappled with <b>C</b>, developed full stack web applications using <b>Python's</b> <b>Django</b> and <b>Flask</b> frameworks and <b>JavaScript's ExpressJS</b>. Wanting to better understand backend development, I moved to <b>Java</b>, building application APIs, implementing user authentication and CRUD operations using both <b>Spring</b> and <b>Dropwizard</b>.</p>
         <p>In September of 2023, I took the step to officially launch my career transition by enrolling in University of Pennsylvania's coding bootcamp, to build upon the skills I developed on my own in preparation for developing software and services professionally.</p>
