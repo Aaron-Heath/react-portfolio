@@ -20,7 +20,7 @@ export default function Header({setPage}) {
           <Navbar.Brand><strong>AH<span className="accent">.</span></strong></Navbar.Brand>
           <Nav>
             <span id="home" className="header-link">Home</span>
-            <span className="header-link" >About Me</span>
+            <span className="header-link" id="about">About Me</span>
             <span className="header-link" id="projects" >Projects</span>
             <span  className="header-link" id="contact">Contact</span>
           </Nav>
