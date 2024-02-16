@@ -6,7 +6,7 @@ export default function ProjectCard({project}) {
         cards: {
             border:"2px solid blue",
             // minHeight: "200px",
-            margin:"5px 0"
+            margin:"20px 0"
         },
     }
 

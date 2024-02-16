@@ -1,13 +1,5 @@
 :root {
   --transition-value: .7s;
-  --accent: #84dccf;
-  --accentgold: #cc9933;
-  --dark: #000f08;
-  --darkbg: rgba(0, 15, 8, .3);
-  --bluemetal: #1c3738;
-  --grey: #4d4847;
-  --mint: #F4FFF8;
-  --blugrey: #8bAAAD;
 }
 
 a {
@@ -120,9 +112,12 @@ border-radius: 8px; */
   color: var(--accentgold);
 } */
 
+.cardv2 h3 {
+  transition: var(--transition-value);
+}
+
 .cardv2:hover h3 {
   color: var(--accentgold);
-  transition: var(--transition-value);
 }
 
 .project-card:hover .project-description {
@@ -152,7 +147,7 @@ border-radius: 8px; */
   font-weight: 500;
   margin: 0 10px 5px 0;
   padding: 3px 15px;
-  border-radius: 8px;
+  border-radius: 15px;
   background-color: var(--dark);
   color: var(--accent);
   
