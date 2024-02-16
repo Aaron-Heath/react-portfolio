@@ -3,6 +3,7 @@
   --accentgold: #cc9933;
   --dark: #000f08;
   --darkbg: rgba(0, 15, 8, .3);
+  --darkbgo: #142b29;
   --bluemetal: #1c3738;
   --grey: #4d4847;
   --mint: #F4FFF8;
@@ -30,12 +31,19 @@ main {
 
 body {
   background-color: var(--bluemetal) !important;
-  overflow: hidden;
+  /* overflow: hidden; */
+  min-height: 100vh;
 }
 
 main {
-  margin: 5%;
-  max-height: 100vh;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 0;
+}
+
+#root {
+  position: relative;
 }
 .section-row p {
  color: var(--mint);
@@ -314,7 +322,7 @@ h2 {
 
 #bio-pic {
   max-width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
 
 }
 
