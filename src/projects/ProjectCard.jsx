@@ -2,6 +2,13 @@ import React from 'react'
 import './projects.css'
 
 export default function ProjectCard({project}) {
+    const styles = {
+        cards: {
+            border:"2px solid blue",
+            // minHeight: "200px",
+            margin:"5px 0"
+        },
+    }
 
     // Handle hover animation
     const handleHover = function(event) {
@@ -68,26 +75,44 @@ export default function ProjectCard({project}) {
     let link;
     link = project.link ? project.link : project.repository;
 
-  return (
+//   return (
     
-        <div onMouseEnter={handleHover} className='project-card col-3' /*style={{height: "344px"}}*/>
-            <div className="row project-img">
-                {/* Image Goes here */}
-                <img src={project.screenshot} alt="placeholder"/>
+//         <div onMouseEnter={handleHover} className='project-card col-3' /*style={{height: "344px"}}*/>
+//             <div className="row project-img">
+//                 {/* Image Goes here */}
+//                 <img src={project.screenshot} alt="placeholder"/>
+//             </div>
+//             <div className='row project-data'>
+//                 <div className="row project-title">
+//                 <a href={link} target="_blank" rel="noopener noreferrer"><h4>{project.title}</h4></a>
+//                 </div>
+
+//                 <div className='row project-description'>
+//                     <p>{project.description}</p>
+//                     <p><a href={project.repository}>Repo</a> | <a href={project.link}>LIVE</a></p>
+//                 </div>
+
+//                 <div className='row project-tags'>
+//                     <ul>Tags: {TAGS}</ul>
+//                 </div>
+//             </div>
+//         </div>
+//   )
+return (
+    <div className='cardv2' style={styles.cards}>
+        <div className='row'>
+            <div className='col-3'>
+
             </div>
-            <div className='row project-data'>
-                <div className="row project-title">
-                <a href={link} target="_blank" rel="noopener noreferrer"><h4>{project.title}</h4></a>
-                </div>
-
-                <div className='row project-description'>
-                    <p>{project.description}</p>
-                </div>
-
-                <div className='row project-tags'>
-                    <ul>Tags: {TAGS}</ul>
-                </div>
+            <div className="col-9">
+                <h3 className='project-title'>{project.title}</h3>
+                <p>{project.description}</p>
+                <ul>
+                    {TAGS}
+                </ul>
             </div>
         </div>
-  )
+    
+    </div>
+)
 }

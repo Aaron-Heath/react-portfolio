@@ -51,5 +51,22 @@
         "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/notes-app/main/assets/app_screenshot.png",
         "link": null
 
+    }, 
+    {
+        "title": "Weather Dashboard",
+        "description": "A dashboard UI for interacting with the OpenWeather API to get weather-releated data.",
+        "languages": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "tags": [
+            "3rd Party API"
+        ],
+        "repository": "https://github.com/Aaron-Heath/weather-dashboard",
+        "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/weather-dashboard/main/assets/images/dashboard-screenshot.png",
+        "link": "https://aaron-heath.github.io/weather-dashboard/"
     }
+    
+
 ]
