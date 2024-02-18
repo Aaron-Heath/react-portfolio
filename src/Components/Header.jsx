@@ -15,7 +15,7 @@ export default function Header({setPage}) {
 
   return (
     <>
-    <Navbar variant="secondary-drk" id="header" onClick={handleClick}>
+    <Navbar sticky="top" variant="secondary-drk" id="header" onClick={handleClick}>
         <Container>
           <Navbar.Brand><strong>AH<span className="accent">.</span></strong></Navbar.Brand>
           <Nav>

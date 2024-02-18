@@ -6,6 +6,7 @@ import BioFeature from './components/bioFeature';
 import ContactFeature from './components/ContactFeature';
 import AboutMe from './about/AboutMe';
 import ProjectsFeature from './projects/ProjectsFeature';
+import Footer from './components/footer/Footer';
 
 
 let App = () => {
@@ -20,6 +21,7 @@ let App = () => {
       <main className="container">
         <ContactFeature/>
       </main>
+      <Footer></Footer>
       </>
     );
 
@@ -29,6 +31,7 @@ let App = () => {
         <main className="container">
           <AboutMe/>
         </main>
+        <Footer></Footer>
       </>
     );
 
@@ -38,6 +41,7 @@ let App = () => {
       <main className="container">
         <ProjectsFeature/>
       </main>
+      <Footer></Footer>
       </>
     )
 
@@ -50,6 +54,7 @@ let App = () => {
         <ProjectsFeature></ProjectsFeature>
         <ContactFeature/> */}
       </main>
+      <Footer></Footer>
       </>);
   }
   
