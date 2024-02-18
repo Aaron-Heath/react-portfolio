@@ -1,0 +1,16 @@
+footer {
+    padding: 0 2%;
+}
+footer a {
+    text-decoration: underline;
+}
+
+footer img {
+    margin: 0 5px;
+    transition: .2s;
+}
+
+footer img:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transform: scale(1.25);
+}
