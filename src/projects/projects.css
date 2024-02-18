@@ -131,6 +131,7 @@ border-radius: 8px; */
 .cardv2 {
   max-width: 90%;
   transition: var(--transition-value);
+  padding: 20px;
 }
 
 .cardv2 p{
@@ -152,5 +153,18 @@ border-radius: 8px; */
   color: var(--accent);
   
   }
+
+.proj-img {
+  max-height: 75px;
+  border: 2px var(--dark) solid;
+  border-radius: 3px;
+
+  transition: var(--transition-value);
+}
+
+.cardv2:hover .proj-img {
+  border: 2px var(--darkbg) solid;
+  transition: var(--transition-value);
+}
 
 

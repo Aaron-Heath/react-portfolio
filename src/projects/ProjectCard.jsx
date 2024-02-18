@@ -4,7 +4,7 @@ import './projects.css'
 export default function ProjectCard({project}) {
     const styles = {
         cards: {
-            border:"2px solid blue",
+            // border:"2px solid blue",
             // minHeight: "200px",
             margin:"20px 0"
         },
@@ -102,6 +102,7 @@ return (
     <div className='cardv2' style={styles.cards}>
         <div className='row'>
             <div className='col-3'>
+                <img className='proj-img' src={project.screenshot}></img>
 
             </div>
             <div className="col-9">

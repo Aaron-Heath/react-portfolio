@@ -8,14 +8,14 @@ export default function ProjectsFeature() {
 
   const styles = {
     aside: {
-      border:"2px red solid",
+      // border:"2px red solid",
       position: "fixed",
       maxHeight: "50vh",
       minHeight:"60vh",
       minWidth: "40%",
     },
     projects: {
-      border:"2px red solid",
+      // border:"2px red solid",
       display:"flex",
       flexDirection:"column",
       justifyContent:"center"
