@@ -14,7 +14,7 @@
             "MVC"
         ],
         "repository": "https://github.com/Aaron-Heath/tastebuds",
-        "screenshot": "/react-portfolio/src/images/tb16_9.png",
+        "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/react-portfolio/main/src/images/tb16_9.png",
         "internalScreenshot": true,
         "link": "https://tastebuds-app-de96bd264a71.herokuapp.com/"
 
@@ -34,8 +34,7 @@
             "PostgreSQL"
         ],
         "repository": "https://github.com/Aaron-Heath/plantpoppa-auth",
-        "screenshot2": "./images/plantpoppa16_9.png",
-        "screenshot": "/react-portfolio/src/images/plantpoppa16_9.png",
+        "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/react-portfolio/main/src/images/plantpoppa16_9.png",
         "internalScreenshot": true,
         "link": null
 
