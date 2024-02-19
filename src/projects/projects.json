@@ -53,7 +53,7 @@
         "repository": "https://github.com/Aaron-Heath/plantpoppa-auth",
         "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/notes-app/main/assets/app_screenshot.png",
         "internalScreenshot": false,
-        "link": null
+        "link": "https://heath-notes-app-8f5c407f8957.herokuapp.com/notes"
 
     }, 
     {
@@ -65,7 +65,8 @@
             "CSS"
         ],
         "tags": [
-            "3rd Party API"
+            "3rd Party API",
+            "NodeJS"
         ],
         "repository": "https://github.com/Aaron-Heath/weather-dashboard",
         "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/weather-dashboard/main/assets/images/dashboard-screenshot.png",

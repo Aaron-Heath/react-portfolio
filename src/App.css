@@ -7,7 +7,33 @@
   --bluemetal: #1c3738;
   --grey: #4d4847;
   --mint: #F4FFF8;
-  --blugrey: #8bAAAD;
+  --bluegrey: #8bAAAD;
+}
+
+[data-theme='light'] {
+  --accent: #0e50c1;
+  --accentgold: #491197;
+  --dark: #F4FFF8;
+  --darkbg: rgba(0, 15, 8, .3);
+  --darkbgo: #142b29;
+  --bluemetal: #afafaf;
+  --grey: #4d4847;
+  --mint: #000f08;
+  --bluegrey: #4d4847;
+}
+
+body::-webkit-scrollbar {
+width: 7px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bluemetal);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--darkbgo);
+  border-radius: 20px;
+
 }
 
 /* DEBUG STYLINGS ONLY */
