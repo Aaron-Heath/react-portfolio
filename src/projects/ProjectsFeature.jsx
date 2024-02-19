@@ -23,26 +23,18 @@ export default function ProjectsFeature() {
 
   }
   // Read project info into memory
-  // const PROJECTS = require('./projects.json');
   const PROJECT_CARDS = []
 
   for (let project of PROJECTS) {
     PROJECT_CARDS.push(<li className='row d-flex justify-content-center'><ProjectCard project={project}></ProjectCard></li>);
   }
 
-  // return (
-  //   <div id="project-section">
-  //     <SectionTitle title={"Projects"}/>
-  //     <div className='row d-flex justify-content-around'>
-  //       {PROJECT_CARDS}
-  //     </div>
-  //   </div>
-  // )
 
   return (
     <div id="proj-content">
       <aside id="project-aside" style={styles.aside}>
         <Name inline={true}/>
+        <h4>Software Engineer</h4>
       </aside>
       <div className='col-6' id="proj-main" style={styles.projects}>
         <ul>

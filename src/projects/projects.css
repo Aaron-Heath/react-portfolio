@@ -2,6 +2,10 @@
   --transition-value: .7s;
 }
 
+h4 {
+  color: var(--bluegrey);
+}
+
 a {
   color: inherit;
 }
@@ -64,6 +68,7 @@ transition: var(--transition-value);
 
 .project-title{
   color:var(--mint);
+  margin-bottom: 2px;
 }
 .project-title h3{
 transition: var(--transition-value);
@@ -74,19 +79,6 @@ padding: 0 2%;
 /* border: green dashed 2px; */
 }
 
-
-.project-description{ 
-display:inline-block;
-opacity: 0;
-height: 0;
-transition: var(--transition-value);
-overflow:hidden;
-/* border: red dashed 2px; */
-}
-
-.project-description a {
-  font-weight: bold;
-}
 
 /* .project-tag {
 /* TODO: Fix tag styling */
@@ -120,11 +112,6 @@ border-radius: 8px; */
   color: var(--accentgold);
 }
 
-.project-card:hover .project-description {
-  height: 150px;
-  
-  opacity: 1;
-}
 
 /* CARD REFACTOR */
 
@@ -132,6 +119,16 @@ border-radius: 8px; */
   max-width: 90%;
   transition: var(--transition-value);
   padding: 20px;
+  position: relative;
+}
+
+.link-pop {
+  transition: .3s;
+}
+
+.link-pop:hover {
+  text-decoration: underline;
+  font-size: 18px;
 }
 
 .cardv2 p{
@@ -139,8 +136,9 @@ border-radius: 8px; */
 }
 
 .cardv2:hover {
-  cursor: pointer;
   background-color: var(--darkbg);
+  /* #52 from  https://getcssscan.com/css-box-shadow-examples*/
+  box-shadow: var(--darkbg) 0px 0px 0.25em, var(--dark) 0px 0.25em 1em;
 }
 
 .project-tag {
@@ -151,7 +149,7 @@ border-radius: 8px; */
   border-radius: 15px;
   background-color: var(--dark);
   color: var(--accent);
-  
+  /* color: rgb(173, 173, 173) */
   }
 
 .proj-img {
