@@ -30,6 +30,10 @@ ul {
   position:  absolute;
   right:0;
 }
+
+.cardv2:last-of-type {
+  margin-bottom: 500px;
+}
   
 .project-card {
 position: relative;
@@ -55,8 +59,15 @@ overflow: hidden;
 transition: var(--transition-value);
 }
 
+.debug-1 {
+  border: 2px red solid;
+  padding: 0;
+}
+
 .project-img img {
-border-radius: 15px 0 0 0;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px 0 0 0;
 
 padding:0;
 transition: var(--transition-value);
@@ -79,15 +90,6 @@ padding: 0 2%;
 /* border: green dashed 2px; */
 }
 
-
-/* .project-tag {
-/* TODO: Fix tag styling */
-/* display:inline-block;
-margin: 0 10px 5px 0;
-padding: 3px 15px;
-border-radius: 8px; */
-/* background-color: var(--dark); */
-/* } */
 
 .project-card:hover{
   overflow: hidden;
@@ -153,7 +155,8 @@ border-radius: 8px; */
   }
 
 .proj-img {
-  max-height: 75px;
+  max-width: 100%;
+  height: auto;
   border: 2px var(--dark) solid;
   border-radius: 3px;
 
@@ -163,6 +166,22 @@ border-radius: 8px; */
 .cardv2:hover .proj-img {
   border: 2px var(--darkbg) solid;
   transition: var(--transition-value);
+}
+
+@media (max-width: 767px) {
+  #project-aside{
+    display: none;
+  }
+
+  #proj-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  #proj-main {
+    position:inherit;
+  }
+  
 }
 
 

@@ -48,10 +48,10 @@ return (
     <div className='cardv2' style={styles.cards}>
         <a href={project.repository} rel="noopener noreferrer" target='_blank'>
         <div className='row'>
-            <div className='col-3'>
+            <div className='col-xs-12 col-lg-4 col-xl-3' >
                 <img className='proj-img' src={project.screenshot}></img>
             </div>
-            <div className="col-9">
+            <div className="col-xs-12 col-lg-8 col-xl-9">
                 
                 <h3 className='project-title'>{project.title}</h3>
                 <p style={styles.links}>{projectLinks[0]}{projectLinks[1]}{projectLinks[2]}</p>

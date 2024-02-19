@@ -31,12 +31,14 @@ export default function ProjectsFeature() {
 
 
   return (
-    <div id="proj-content">
-      <aside id="project-aside" style={styles.aside}>
-        <Name inline={true}/>
-        <h4>Software Engineer</h4>
+    <div id="proj-content" className='row'>
+      <aside className='col-6' style={styles.aside}>
+        <div id="project-aside">
+          <Name inline={true}/>
+          <h4>Software Engineer</h4>
+        </div>
       </aside>
-      <div className='col-6' id="proj-main" style={styles.projects}>
+      <div className='col-sm-12 col-md-6' id="proj-main" style={styles.projects}>
         <ul>
         {PROJECT_CARDS}
         </ul>

@@ -10,6 +10,18 @@
   --bluegrey: #8bAAAD;
 }
 
+[data-theme='light'] {
+  --accent: #0e50c1;
+  --accentgold: #491197;
+  --dark: #F4FFF8;
+  --darkbg: rgba(0, 15, 8, .3);
+  --darkbgo: #142b29;
+  --bluemetal: #afafaf;
+  --grey: #4d4847;
+  --mint: #000f08;
+  --bluegrey: #4d4847;
+}
+
 body::-webkit-scrollbar {
 width: 7px;               /* width of the entire scrollbar */
 }
