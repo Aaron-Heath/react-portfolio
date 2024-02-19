@@ -15,13 +15,13 @@ width: 7px;               /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--bluemetal);        /* color of the tracking area */
+  background: var(--bluemetal);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--darkbgo);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  /* border: 1px solid var(--bluegrey); */
+  background-color: var(--darkbgo);
+  border-radius: 20px;
+
 }
 
 /* DEBUG STYLINGS ONLY */
