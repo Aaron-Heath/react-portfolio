@@ -22,7 +22,7 @@ export default function AboutMe() {
       <SectionTitle title={"About Me"}></SectionTitle>
       <div className='col-md-4'>
         <h4 style={styles.h4Header}>Languages</h4>
-        <div>
+        <div id="languages-bar">
             <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/java/java-original-wordmark.svg" width={styles.icons.size} height={styles.icons.size} alt="Java" title="Java"/>
             <img  src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/python/python-original-wordmark.svg" height={styles.icons.size} width={styles.icons.size} alt="Python" title="Python"/>
             <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/javascript/javascript-original.svg" width={styles.icons.size} height={styles.icons.size} alt="JavaScript" title="JavaScript"/>
@@ -30,7 +30,7 @@ export default function AboutMe() {
             <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/css3/css3-original.svg" width={styles.icons.size} height={styles.icons.size} alt="CSS" title="CSS"/>
         </div>
         <h4 style={styles.h4Header}>Tools</h4>
-        <div>
+        <div id="tools-bar">
             <img  src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/react/react-original-wordmark.svg" width={styles.icons.size} height={styles.icons.size} alt="React" title="React"/>
             <img  src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/spring/spring-original-wordmark.svg" width={styles.icons.size} height={styles.icons.size} alt="Spring" title="Spring"/>
             <img  src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/dropwizard/dropwizard-original.svg" width={styles.icons.size} height={styles.icons.size} alt="Dropwizard" title="Dropwizard"/>
@@ -41,7 +41,7 @@ export default function AboutMe() {
             <img  src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/postgresql/postgresql-original.svg" width={styles.icons.size} height={styles.icons.size} alt="Postgresql" title="Postgresql"/>
         </div>
       </div>
-      <div style={styles.textPortion} className='col-md-8'>
+      <div id="about-text" style={styles.textPortion} className='col-md-8'>
         <p>My path to web development and software engineering began with 12 hour nights at a 911 Center in Montgomery County, Pennsylvania. What started as a hobby and budding interest quickly snowballed  into a love and passion for coding, fueling my self-guided learning for several years.</p>
         <p>In that time, I've grappled with <b>C</b>, developed full stack web applications using <b>Python's</b> <b>Django</b> and <b>Flask</b> frameworks and <b>JavaScript's ExpressJS</b>. Wanting to better understand backend development, I moved to <b>Java</b>, building application APIs, implementing user authentication and CRUD operations using both <b>Spring</b> and <b>Dropwizard</b>.</p>
         <p>In September of 2023, I took the step to officially launch my career transition by enrolling in University of Pennsylvania's coding bootcamp, to build upon the skills I developed on my own in preparation for developing software and services professionally.</p>
