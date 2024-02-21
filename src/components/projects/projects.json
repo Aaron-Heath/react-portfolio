@@ -1,0 +1,78 @@
+[
+    {
+        "title": "TasteBuds",
+        "description": "A social cookbook and recipe sharing application for friends. Lets users create and share recipes for easy access without the distracting blogs or extras.",
+        "languages": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "tags": [
+            "Express",
+            "Handlebars",
+            "Heroku",
+            "MVC"
+        ],
+        "repository": "https://github.com/Aaron-Heath/tastebuds",
+        "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/react-portfolio/main/src/images/tb16_9.png",
+        "internalScreenshot": true,
+        "link": "https://tastebuds-app-de96bd264a71.herokuapp.com/"
+
+    },
+    {
+        "title": "PlantPoppa",
+        "description": "A plant care tracking application built on React and Spring. Designed to track when you've watered your plants.",
+        "languages": [
+            "Java",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "tags": [
+            "Spring",
+            "React",
+            "PostgreSQL"
+        ],
+        "repository": "https://github.com/Aaron-Heath/plantpoppa-auth",
+        "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/react-portfolio/main/src/images/plantpoppa16_9.png",
+        "internalScreenshot": true,
+        "link": null
+
+    },
+    {
+        "title": "Notes App",
+        "description": "A note-taking application that allows users to create and delete notes that are stored in on a server. Built on Express.",
+        "languages": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "tags": [
+            "Express"
+        ],
+        "repository": "https://github.com/Aaron-Heath/plantpoppa-auth",
+        "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/notes-app/main/assets/app_screenshot.png",
+        "internalScreenshot": false,
+        "link": "https://heath-notes-app-8f5c407f8957.herokuapp.com/notes"
+
+    }, 
+    {
+        "title": "Weather Dashboard",
+        "description": "A dashboard UI for interacting with the OpenWeather API to get weather-releated data.",
+        "languages": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "tags": [
+            "3rd Party API",
+            "NodeJS"
+        ],
+        "repository": "https://github.com/Aaron-Heath/weather-dashboard",
+        "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/weather-dashboard/main/assets/images/dashboard-screenshot.png",
+        "internalScreenshot": false,
+        "link": "https://aaron-heath.github.io/weather-dashboard/"
+    }
+    
+
+]
