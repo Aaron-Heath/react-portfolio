@@ -23,8 +23,8 @@ export default function TextScroller() {
 
     React.useEffect(() => {
         const intervalId = setInterval(
-            () => setIndex((index) => index+1),
-            4000
+            () => setIndex((index) => Math.floor(Math.random()*TEXTS.length)),
+            3000
         );
 
         return ()=> clearTimeout(intervalId);

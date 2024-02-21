@@ -2,7 +2,8 @@ import React from 'react'
 import SectionTitle from '../../SectionTitle'
 import ProjectCard from '../ProjectCard';
 import Name from '../../brand/Name'
-import PROJECTS from '../../../projects/projects.json'
+import PROJECTS from '../../projects/projects.json'
+import TextScroller from '../../TextScroller';
 
 export default function ProjectsFeature() {
 
@@ -36,6 +37,7 @@ export default function ProjectsFeature() {
         <div id="project-aside">
           <Name inline={true}/>
           <h4>Software Engineer</h4>
+          <TextScroller/>
         </div>
       </aside>
       <div className='col-sm-12 col-md-6' id="proj-main" style={styles.projects}>
