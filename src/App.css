@@ -436,7 +436,9 @@ span.navbar-brand {
 
 
 /* Media Queries */
-@media screen and (max-width: 800px) {
-  /* Remove picture */
+@media screen and (max-width: 767px) {
+  body {
+    padding-bottom: 20%;
+  }
   
 }

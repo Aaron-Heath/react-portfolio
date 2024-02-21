@@ -10,3 +10,21 @@
 b {
     color: var(--accentgold);
 }
+
+
+@media screen and (max-width: 767px) {
+    #tools-bar,
+    #languages-bar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #tools-bar {
+        margin-bottom: 30px;
+    }
+
+    #about-text {
+        padding-left: 20px;
+    }    
+  }
+  
