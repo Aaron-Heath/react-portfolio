@@ -1,8 +1,8 @@
 import React from 'react'
-import ContactCard from './ContactCard'
-import SectionTitle from './SectionTitle'
+import ContactCard from '../ContactCard'
+import SectionTitle from '../../SectionTitle'
 import { Button, Form } from 'react-bootstrap'
-import DownloadIcon from '../icons/icons8-download-52.png'
+import DownloadIcon from '../../../icons/icons8-download-52.png'
 
 export default function ContactFeature() {
   const handleSubmit = function(event) {

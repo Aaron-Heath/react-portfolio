@@ -1,8 +1,8 @@
 import React from 'react'
-import SectionTitle from '../components/SectionTitle'
-import ProjectCard from './ProjectCard';
-import Name from '../components/Name'
-import PROJECTS from './projects.json'
+import SectionTitle from '../../SectionTitle'
+import ProjectCard from '../ProjectCard';
+import Name from '../../brand/Name'
+import PROJECTS from '../../../projects/projects.json'
 
 export default function ProjectsFeature() {
 

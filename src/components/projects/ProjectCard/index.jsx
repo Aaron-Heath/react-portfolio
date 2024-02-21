@@ -1,5 +1,5 @@
 import React from 'react'
-import './projects.css'
+import '../projects.css'
 
 export default function ProjectCard({project}) {
     const styles = {
