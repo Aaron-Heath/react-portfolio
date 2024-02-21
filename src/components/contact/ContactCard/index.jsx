@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { Tooltip, OverlayTrigger } from 'react-bootstrap'
-
-import EmailIcon from '../icons/icons8-email-96.png'
-import LinkedIcon from '../icons/icons8-linkedin-100.png'
-import CopyIcon from '../icons/icons8-copy-96.png'
+import EmailIcon from '../../../icons/icons8-email-96.png'
+import LinkedIcon from '../../../icons/icons8-linkedin-100.png'
+import CopyIcon from '../../../icons/icons8-copy-96.png'
 
 export default function ContactCard({type, text, href}) {
     const [clicked, setClick] = useState(false);  
