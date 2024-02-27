@@ -3,6 +3,7 @@ footer {
 }
 footer a {
     text-decoration: underline;
+    color: var(--mint);
 }
 
 footer img {
