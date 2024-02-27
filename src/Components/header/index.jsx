@@ -9,6 +9,11 @@ export default function Header({setPage}) {
     if(event.target.matches("span")) {
       console.log(event.target);
       setPage(event.target.id);
+      if(event.target.id === 'home') {
+        window.location = '/';
+        return;
+      }
+      window.location=`/`+event.target.id;
     }
 
   }
