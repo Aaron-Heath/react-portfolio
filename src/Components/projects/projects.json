@@ -40,22 +40,23 @@
 
     },
     {
-        "title": "Notes App",
-        "description": "A note-taking application that allows users to create and delete notes that are stored in on a server. Built on Express.",
+        "title": "LeafLit",
+        "description": "A frontend application that pairs teas with your favorite books",
         "languages": [
             "JavaScript",
             "HTML",
             "CSS"
         ],
         "tags": [
-            "Express"
+            "NodeJS",
+            "3rd Party API"
         ],
-        "repository": "https://github.com/Aaron-Heath/plantpoppa-auth",
-        "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/notes-app/main/assets/app_screenshot.png",
-        "internalScreenshot": false,
-        "link": "https://heath-notes-app-8f5c407f8957.herokuapp.com/notes"
+        "repository": "https://github.com/Aaron-Heath/leaflit",
+        "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/react-portfolio/76e3e61c9b6e94db81ea515062b60e9b723d21c0/src/images/leaflit19_9.png",
+        "internalScreenshot": true,
+        "link": "https://aaron-heath.github.io/leaflit/"
 
-    }, 
+    },
     {
         "title": "Weather Dashboard",
         "description": "A dashboard UI for interacting with the OpenWeather API to get weather-releated data.",
@@ -72,7 +73,25 @@
         "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/weather-dashboard/main/assets/images/dashboard-screenshot.png",
         "internalScreenshot": false,
         "link": "https://aaron-heath.github.io/weather-dashboard/"
-    }
+    },
+    {
+        "title": "Notes App",
+        "description": "A note-taking application that allows users to create and delete notes that are stored in on a server. Built on Express.",
+        "languages": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "tags": [
+            "Express"
+        ],
+        "repository": "https://github.com/Aaron-Heath/plantpoppa-auth",
+        "screenshot": "https://raw.githubusercontent.com/Aaron-Heath/notes-app/main/assets/app_screenshot.png",
+        "internalScreenshot": false,
+        "link": "https://heath-notes-app-8f5c407f8957.herokuapp.com/notes"
+
+    } 
+
     
 
 ]
